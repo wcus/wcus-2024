@@ -9,7 +9,7 @@ on:
           - .stylelintrc.json
           - package.json
           - postcss.config.js
-  workflow_dispatch:
+    workflow_dispatch:
 
 jobs:
     build:
