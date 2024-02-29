@@ -4,6 +4,11 @@ on:
     push:
         branches:
             - main
+        paths:
+          - css
+          - .stylelintrc.json
+          - package.json
+          - postcss.config.js
 
 jobs:
     build:
