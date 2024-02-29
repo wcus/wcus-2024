@@ -5,7 +5,7 @@ on:
         branches:
             - main
         paths:
-          - css
+          - css/**
           - .stylelintrc.json
           - package.json
           - postcss.config.js
