@@ -116,6 +116,15 @@ input[type="reset"] {
 	}
 }
 
+/* Jetpack Form overrides */
+.contact-form .grunion-checkbox-multiple-options,
+.contact-form .grunion-radio-options {
+
+	p.contact-form-field {
+		margin: 0;
+	}
+}
+
 .wp-block-post-title {
 	text-wrap: balance;
 	overflow-wrap: initial;
