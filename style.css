@@ -118,6 +118,12 @@ input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:ac
 		color: var(--wp--preset--color--base);
 	}
 
+/* Jetpack Form overrides */
+
+.contact-form .grunion-checkbox-multiple-options p.contact-form-field, .contact-form .grunion-radio-options p.contact-form-field {
+		margin: 0;
+	}
+
 .wp-block-post-title {
 	text-wrap: balance;
 	overflow-wrap: initial;
