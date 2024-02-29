@@ -1,32 +1,32 @@
 /*
 Colors set by Global Styles:
-  --wp--preset--color--base: #fff;
-  --wp--preset--color--base-2: #dce0e4;
-  --wp--preset--color--contrast: #0f3236;
-  --wp--preset--color--contrast-2: #49595b;
-  --wp--preset--color--contrast-3: #808992;
-  --wp--preset--color--accent: #ff4832;
-  --wp--preset--color--accent-2: #0f6d55;
-  --wp--preset--color--accent-3: #65b8aa;
-  --wp--preset--color--accent-4: #085357;
-  --wp--preset--color--accent-5: #c35140;
+	--wp--preset--color--base: #fff;
+	--wp--preset--color--base-2: #dce0e4;
+	--wp--preset--color--contrast: #0f3236;
+	--wp--preset--color--contrast-2: #49595b;
+	--wp--preset--color--contrast-3: #808992;
+	--wp--preset--color--accent: #ff4832;
+	--wp--preset--color--accent-2: #0f6d55;
+	--wp--preset--color--accent-3: #65b8aa;
+	--wp--preset--color--accent-4: #085357;
+	--wp--preset--color--accent-5: #c35140;
 
 Font variable:
-  --wp--preset--font-family--inclusive-sans: "Inclusive Sans", sans-serif;
+	--wp--preset--font-family--inclusive-sans: "Inclusive Sans", sans-serif;
 
-  --wp--preset--font-size--small: 0.9rem;
-  --wp--preset--font-size--medium: 1.05rem;
-  --wp--preset--font-size--large: clamp(1.39rem, 1.39rem + ((1vw - 0.2rem) * 0.767), 1.85rem);
-  --wp--preset--font-size--x-large: clamp(1.85rem, 1.85rem + ((1vw - 0.2rem) * 1.083), 2.5rem);
-  --wp--preset--font-size--xx-large: clamp(2.5rem, 2.5rem + ((1vw - 0.2rem) * 1.283), 3.27rem);
+	--wp--preset--font-size--small: 0.9rem;
+	--wp--preset--font-size--medium: 1.05rem;
+	--wp--preset--font-size--large: clamp(1.39rem, 1.39rem + ((1vw - 0.2rem) * 0.767), 1.85rem);
+	--wp--preset--font-size--x-large: clamp(1.85rem, 1.85rem + ((1vw - 0.2rem) * 1.083), 2.5rem);
+	--wp--preset--font-size--xx-large: clamp(2.5rem, 2.5rem + ((1vw - 0.2rem) * 1.283), 3.27rem);
 
 Spacing variables:
-  --wp--preset--spacing--10: 1rem;
-  --wp--preset--spacing--20: min(1.5rem, 2vw);
-  --wp--preset--spacing--30: min(2.5rem, 3vw);
-  --wp--preset--spacing--40: min(4rem, 5vw);
-  --wp--preset--spacing--50: min(6.5rem, 8vw);
-  --wp--preset--spacing--60: min(10.5rem, 13vw);
+	--wp--preset--spacing--10: 1rem;
+	--wp--preset--spacing--20: min(1.5rem, 2vw);
+	--wp--preset--spacing--30: min(2.5rem, 3vw);
+	--wp--preset--spacing--40: min(4rem, 5vw);
+	--wp--preset--spacing--50: min(6.5rem, 8vw);
+	--wp--preset--spacing--60: min(10.5rem, 13vw);
 */
 
 html {
@@ -55,6 +55,68 @@ ol,
 blockquote {
 	text-wrap: pretty;
 }
+
+/* Add default focus style. */
+
+a:focus,
+button:focus,
+.wp-element-button:focus,
+.wp-block-button__link:focus
+input:focus,
+input:focus-visible,
+select:focus,
+textarea:focus,
+input[type="submit"]:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus {
+	outline-color: var(--wp--preset--color--contrast-2);
+	outline-offset: 2px;
+	outline-style: dashed;
+	outline-width: 1px;
+}
+
+a:focus,
+button:focus,
+.wp-element-button:focus,
+.wp-block-button__link:focus {
+	border-radius: 2px;
+}
+
+/* Style default form elements */
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+	border: none;
+	background-color: var(--wp--preset--color--contrast);
+	color: var(--wp--preset--color--base);
+	font-family: var(--wp--preset--font-family--inclusive-sans);
+	font-size: var(--wp--preset--font-size--medium);
+	font-style: normal;
+	font-weight: 500;
+	line-height: inherit;
+	border-radius: 0;
+	padding-top: var(--wp--preset--spacing--10);
+	padding-right: var(--wp--preset--spacing--30);
+	padding-bottom: var(--wp--preset--spacing--10);
+	padding-left: var(--wp--preset--spacing--30);
+}
+
+input[type="submit"]:hover, input[type="button"]:hover, input[type="reset"]:hover {
+		background-color: var(--wp--preset--color--contrast-2);
+		color: var(--wp--preset--color--base);
+	}
+
+input[type="submit"]:focus, input[type="button"]:focus, input[type="reset"]:focus {
+		background-color: var(--wp--preset--color--contrast-2);
+		border-color: var(--wp--preset--color--contrast-2);
+		color: var(--wp--preset--color--base);
+	}
+
+input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:active {
+		background-color: var(--wp--preset--color--contrast);
+		color: var(--wp--preset--color--base);
+	}
 
 .wp-block-post-title {
 	text-wrap: balance;
@@ -91,3 +153,163 @@ body.home footer.wp-block-template-part {
 body.home footer.wp-block-template-part .wp-block-group:first-child {
 	padding-top: 0 !important;
 }
+
+/* Tickets form */
+
+#tix .tix-ticket-form,
+	#tix .tix-tickets-list,
+	#tix .tix-order-summary,
+	#tix .tix-submit,
+	#tix .tix-attendee-form {
+		width: 100%;
+	}
+
+#tix .tix-ticket-form,
+	#tix .tix-tickets-list,
+	#tix .tix-order-summary {
+		border-spacing: 0;
+		border-collapse: collapse;
+	}
+
+#tix .tix-ticket-form thead th, #tix .tix-tickets-list thead th, #tix .tix-order-summary thead th {
+			border-bottom: 2px dashed var(--wp--preset--color--accent);
+		}
+
+#tix .tix-ticket-form th,
+		#tix .tix-tickets-list th,
+		#tix .tix-order-summary th,
+		#tix .tix-ticket-form td,
+		#tix .tix-tickets-list td,
+		#tix .tix-order-summary td {
+			padding: 1em 0.5em;
+		}
+
+#tix .tix-attendee-form,
+		#tix .tix-attendee-form tr,
+		#tix .tix-attendee-form td,
+		#tix .tix-attendee-form th {
+			display: block;
+			width: 100%;
+		}
+
+#tix .tix-attendee-form .tix-left {
+			padding-bottom: 0;
+			margin-bottom: 0.25rem;
+		}
+
+#tix .tix-attendee-form .tix-right {
+			padding-left: 0;
+		}
+
+#tix .tix-attendee-form input[type="text"],
+		#tix .tix-attendee-form input[type="email"],
+		#tix .tix-attendee-form input[type="url"],
+		#tix .tix-attendee-form textarea,
+		#tix .tix-attendee-form {
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+#tix .tix-attendee-form fieldset {
+			margin-top: 0.5rem;
+		}
+
+#tix .tix-attendee-form fieldset label {
+			display: inline-block;
+			margin-bottom: 0.5em;
+			font-size: 1rem;
+			vertical-align: middle;
+		}
+
+#tix .tix-attendee-form fieldset label input {
+				margin-right: 0.5rem;
+			}
+
+@media (max-width: 600px) {
+
+#tix .tix-attendee-form fieldset label {
+				font-size: inherit;
+		}
+			}
+
+#tix .tix-submit {
+		float: none;
+		margin: var(--wp--preset--spacing--30) auto var(--wp--preset--spacing--50);
+	}
+
+#tix .tix-submit .tix-checkout-button {
+		text-transform: none;
+		letter-spacing: 0;
+		border-radius: 2px;
+		padding: 0.5rem 1rem;
+		background: var(--wp--preset--color--contrast);
+		color: var(--wp--preset--color--base);
+		font-size: 1.125rem;
+		font-family: var(--wp--preset--font-family--inclusive-sans);
+	}
+
+#tix .tix-submit .tix-checkout-button:hover,
+		#tix .tix-submit .tix-checkout-button:focus {
+			background: var(--wp--preset--color--contrast-2);
+		}
+
+.tix-column-price,
+.tix-column-per-ticket,
+.tix-column-quantity,
+.tix-row-total {
+	text-align: right;
+}
+
+.tix-column-remaining {
+	display: none;
+}
+
+.tix-ticket-form input[type="text"],
+	.tix-private-form input[type="text"],
+	.tix-attendee-form input[type="text"],
+	.tix-receipt-form input[type="text"],
+	.tix-ticket-form input[type="email"],
+	.tix-private-form input[type="email"],
+	.tix-attendee-form input[type="email"],
+	.tix-receipt-form input[type="email"],
+	.tix-ticket-form input[type="url"],
+	.tix-private-form input[type="url"],
+	.tix-attendee-form input[type="url"],
+	.tix-receipt-form input[type="url"],
+	.tix-ticket-form textarea,
+	.tix-private-form textarea,
+	.tix-attendee-form textarea,
+	.tix-receipt-form textarea {
+		padding: 0.5em;
+	}
+
+.tix-ticket-form select, .tix-private-form select, .tix-attendee-form select, .tix-receipt-form select {
+		padding: 0.5em;
+	}
+
+.tix-ticket-form tr > *, .tix-private-form tr > *, .tix-attendee-form tr > *, .tix-receipt-form tr > * {
+		padding-bottom: 1em;
+	}
+
+.tix-ticket-form .tix-right, .tix-private-form .tix-right, .tix-attendee-form .tix-right, .tix-receipt-form .tix-right {
+		padding-left: 2em;
+	}
+
+.tix-row-coupon td {
+	padding-inline: 0;
+}
+
+#tix-coupon-container[style*="block"] {
+	display: flex !important;
+	justify-content: flex-end;
+}
+
+#tix-coupon-container[style*="block"] input[type="text"] {
+		flex: 1;
+		font-size: var(--wp--preset--font-size--small);
+	}
+
+#tix-coupon-container[style*="block"] input[type="submit"] {
+		padding-block: calc(var(--wp--preset--spacing--10) / 2);
+		font-size: var(--wp--preset--font-size--small);
+	}
