@@ -125,6 +125,30 @@ input[type="reset"] {
 	}
 }
 
+.contact-form .grunion-field-select-wrap {
+
+	select {
+		width: 100%;
+	}
+}
+
+.contact-form .grunion-field-checkbox-wrap {
+
+	.contact-form__checkbox-wrap {
+		display: flex;
+		align-items: flex-start;
+
+		input {
+			flex: 0;
+			margin-block-start: 0.5em;
+		}
+
+		label {
+			line-height: inherit;
+		}
+	}
+}
+
 .wp-block-post-title {
 	text-wrap: balance;
 	overflow-wrap: initial;

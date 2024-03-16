@@ -124,6 +124,24 @@ input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:ac
 		margin: 0;
 	}
 
+.contact-form .grunion-field-select-wrap select {
+		width: 100%;
+	}
+
+.contact-form .grunion-field-checkbox-wrap .contact-form__checkbox-wrap {
+		display: flex;
+		align-items: flex-start;
+	}
+
+.contact-form .grunion-field-checkbox-wrap .contact-form__checkbox-wrap input {
+			flex: 0;
+			margin-block-start: 0.5em;
+		}
+
+.contact-form .grunion-field-checkbox-wrap .contact-form__checkbox-wrap label {
+			line-height: inherit;
+		}
+
 .wp-block-post-title {
 	text-wrap: balance;
 	overflow-wrap: initial;
