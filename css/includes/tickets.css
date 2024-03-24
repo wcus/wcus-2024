@@ -148,3 +148,8 @@
 		font-size: var(--wp--preset--font-size--small);
 	}
 }
+
+/* Badge name question */
+#tix_attendee_questions-1-542 { /* stylelint-disable-line selector-id-pattern */
+	max-width: 25ch;
+}
