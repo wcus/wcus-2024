@@ -149,6 +149,11 @@ input[type="reset"] {
 	}
 }
 
+.contact-form label span.grunion-label-required {
+	opacity: 0.9 !important;
+	color: var(--wp--preset--color--contrast-2);
+}
+
 .wp-block-post-title {
 	text-wrap: balance;
 	overflow-wrap: initial;
