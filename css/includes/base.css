@@ -185,7 +185,7 @@ input[type="reset"] {
 
 	/* Image links on homepage */
 	.image-links {
-		flex-wrap: wrap;
+		flex-wrap: wrap !important;
 
 		& img {
 			max-width: 180px !important;

@@ -178,7 +178,7 @@ input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:ac
 
 	/* Image links on homepage */
 	.image-links {
-		flex-wrap: wrap;
+		flex-wrap: wrap !important;
 	}
 
 		.image-links img {
