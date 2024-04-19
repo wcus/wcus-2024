@@ -72,6 +72,10 @@ input[type="reset"]:focus {
 	outline-offset: 2px;
 	outline-style: dashed;
 	outline-width: 1px;
+
+	.has-base-color > & {
+		outline-color: var(--wp--preset--color--base);
+	}
 }
 
 a:focus,
