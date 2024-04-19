@@ -147,6 +147,8 @@ input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:ac
 	color: var(--wp--preset--color--contrast-2);
 }
 
+/* Block overrides */
+
 .wp-block-post-title {
 	text-wrap: balance;
 	overflow-wrap: initial;
@@ -155,6 +157,10 @@ input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:ac
 
 .wp-block-site-title a:where(:not(.wp-element-button)):hover {
 	text-decoration: underline;
+}
+
+.wp-block-image a {
+	display: inline-block;
 }
 
 @media (max-width: 999px) {
@@ -169,6 +175,15 @@ input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:ac
 }
 
 @media (max-width: 781px) {
+
+	/* Image links on homepage */
+	.image-links {
+		flex-wrap: wrap;
+	}
+
+		.image-links img {
+			max-width: 180px !important;
+		}
 
 	footer.wp-block-template-part .wp-block-columns .wp-block-group {
 		justify-content: flex-start;
