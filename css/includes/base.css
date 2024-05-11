@@ -61,6 +61,7 @@ a:focus,
 button:focus,
 .wp-element-button:focus,
 .wp-block-button__link:focus
+..wp-block-details summary:focus,
 input:focus,
 input:focus-visible,
 select:focus,
@@ -81,7 +82,8 @@ input[type="reset"]:focus {
 a:focus,
 button:focus,
 .wp-element-button:focus,
-.wp-block-button__link:focus {
+.wp-block-button__link:focus,
+.wp-block-details summary:focus {
 	border-radius: 2px;
 }
 
@@ -172,6 +174,25 @@ input[type="reset"] {
 
 .wp-block-image a {
 	display: inline-block;
+}
+
+/* Fix submenu alignment */
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+	margin-block-start: 6px;
+}
+
+/* Fix submenu focus spacing */
+.wp-block-navigation .wp-block-navigation__submenu-container a:focus {
+	outline-offset: -2px;
+}
+
+/* Style the details block better */
+.wp-block-details {
+	width: 100%;
+
+	& summary {
+		padding-inline: var(--wp--preset--spacing--20);
+	}
 }
 
 @media (max-width: 999px) {

@@ -62,6 +62,7 @@ a:focus,
 button:focus,
 .wp-element-button:focus,
 .wp-block-button__link:focus
+..wp-block-details summary:focus,
 input:focus,
 input:focus-visible,
 select:focus,
@@ -76,14 +77,15 @@ input[type="reset"]:focus {
 }
 
 .has-base-color > :is(a:focus,button:focus,.wp-element-button:focus,.wp-block-button__link:focus
-input:focus,input:focus-visible,select:focus,textarea:focus,input[type="submit"]:focus,input[type="button"]:focus,input[type="reset"]:focus) {
+..wp-block-details summary:focus,input:focus,input:focus-visible,select:focus,textarea:focus,input[type="submit"]:focus,input[type="button"]:focus,input[type="reset"]:focus) {
 		outline-color: var(--wp--preset--color--base);
 	}
 
 a:focus,
 button:focus,
 .wp-element-button:focus,
-.wp-block-button__link:focus {
+.wp-block-button__link:focus,
+.wp-block-details summary:focus {
 	border-radius: 2px;
 }
 
@@ -167,6 +169,28 @@ input[type="submit"]:active, input[type="button"]:active, input[type="reset"]:ac
 .wp-block-image a {
 	display: inline-block;
 }
+
+/* Fix submenu alignment */
+
+.wp-block-navigation:not(.has-background) .wp-block-navigation__submenu-container {
+	margin-block-start: 6px;
+}
+
+/* Fix submenu focus spacing */
+
+.wp-block-navigation .wp-block-navigation__submenu-container a:focus {
+	outline-offset: -2px;
+}
+
+/* Style the details block better */
+
+.wp-block-details {
+	width: 100%;
+}
+
+.wp-block-details summary {
+		padding-inline: var(--wp--preset--spacing--20);
+	}
 
 @media (max-width: 999px) {
 
