@@ -60,8 +60,8 @@ blockquote {
 a:focus,
 button:focus,
 .wp-element-button:focus,
-.wp-block-button__link:focus
-..wp-block-details summary:focus,
+.wp-block-button__link:focus,
+.wp-block-details summary:focus,
 input:focus,
 input:focus-visible,
 select:focus,

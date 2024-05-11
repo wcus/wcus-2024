@@ -61,8 +61,8 @@ blockquote {
 a:focus,
 button:focus,
 .wp-element-button:focus,
-.wp-block-button__link:focus
-..wp-block-details summary:focus,
+.wp-block-button__link:focus,
+.wp-block-details summary:focus,
 input:focus,
 input:focus-visible,
 select:focus,
@@ -76,8 +76,7 @@ input[type="reset"]:focus {
 	outline-width: 1px;
 }
 
-.has-base-color > :is(a:focus,button:focus,.wp-element-button:focus,.wp-block-button__link:focus
-..wp-block-details summary:focus,input:focus,input:focus-visible,select:focus,textarea:focus,input[type="submit"]:focus,input[type="button"]:focus,input[type="reset"]:focus) {
+.has-base-color > :is(a:focus,button:focus,.wp-element-button:focus,.wp-block-button__link:focus,.wp-block-details summary:focus,input:focus,input:focus-visible,select:focus,textarea:focus,input[type="submit"]:focus,input[type="button"]:focus,input[type="reset"]:focus) {
 		outline-color: var(--wp--preset--color--base);
 	}
 
