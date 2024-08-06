@@ -466,19 +466,19 @@ body.single-wcb_organizer .wp-block-post-content .wp-block-read-more {
 		display: none;
 	}
 
-body.page-slug-speakers .wp-block-wordcamp-avatar, body.single-wcb_speaker .wp-block-wordcamp-avatar {
+:is(.wp-block-query .wcb_speaker,body.page-slug-speakers,body.single-wcb_speaker) .wp-block-wordcamp-avatar {
 		max-width: 100%;
 		height: auto !important;
 		overflow: hidden;
 		position: relative;
 	}
 
-body.page-slug-speakers .wp-block-wordcamp-avatar img, body.single-wcb_speaker .wp-block-wordcamp-avatar img {
+:is(.wp-block-query .wcb_speaker,body.page-slug-speakers,body.single-wcb_speaker) .wp-block-wordcamp-avatar img {
 			display: block;
 			vertical-align: middle;
 		}
 
-body.page-slug-speakers .wp-block-wordcamp-avatar::before, body.single-wcb_speaker .wp-block-wordcamp-avatar::before {
+:is(.wp-block-query .wcb_speaker,body.page-slug-speakers,body.single-wcb_speaker) .wp-block-wordcamp-avatar::before {
 			content: "";
 			background-image: url(https://us.wordcamp.org/2024/files/2024/04/generic.png);
 			background-repeat: no-repeat;
@@ -490,7 +490,7 @@ body.page-slug-speakers .wp-block-wordcamp-avatar::before, body.single-wcb_speak
 			z-index: -1;
 		}
 
-body.page-slug-speakers .wp-block-wordcamp-avatar.is-style-rounded::before, body.single-wcb_speaker .wp-block-wordcamp-avatar.is-style-rounded::before {
+:is(.wp-block-query .wcb_speaker,body.page-slug-speakers,body.single-wcb_speaker) .wp-block-wordcamp-avatar.is-style-rounded::before {
 			border-radius: 50%;
 		}
 
