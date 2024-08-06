@@ -462,6 +462,38 @@ body.single-wcb_organizer .wp-block-post-content .wp-block-read-more {
 		display: none;
 	}
 
+body.single-wcb_speaker .wp-block-post-content .wp-block-read-more {
+		display: none;
+	}
+
+body.single-wcb_speaker .wp-block-wordcamp-avatar {
+		max-width: 100%;
+		height: auto !important;
+		width: auto !important;
+		overflow: hidden;
+		position: relative;
+	}
+
+body.single-wcb_speaker .wp-block-wordcamp-avatar img {
+			vertical-align: middle;
+		}
+
+body.single-wcb_speaker .wp-block-wordcamp-avatar::before {
+			content: "";
+			background-image: url(https://us.wordcamp.org/2024/files/2024/04/generic.png);
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: -1;
+		}
+
+body.single-wcb_speaker .wp-block-wordcamp-avatar.is-style-rounded::before {
+			border-radius: 50%;
+		}
+
 #tix-attendees {
 	font-size: var(--wp--preset--font-size--small);
 }
