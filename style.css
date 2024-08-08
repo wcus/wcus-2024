@@ -592,29 +592,22 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 
 /* Specificity hack */
 
-.wordcamp-schedule:not(#hack) {
-	--wc-schedule--color--background: var(--wp--preset--color--base);
-	--wc-schedule--color--text: var(--wp--preset--color--contrast);
-	--wc-schedule--link--color--text: var(--wp--preset--color--accent-2);
-	--wc-schedule--session--border--color: var(--wp--preset--color--accent-3);
-}
-
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__date {
 		display: none;
 	}
 
 .wordcamp-schedule:not(#hack) a:where(:not(.wp-element-button)) {
-		color: var(--wc-schedule--link--color--text);
+		color: var(--wp--preset--color--accent-2);
 	}
 
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__day {
-		background-color: var(--wc-schedule--color--background);
+		background-color: var(--wp--preset--color--base);
 	}
 
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__session,
 	.wordcamp-schedule:not(#hack) .wordcamp-schedule__time-slot-header {
 		padding: 1.5rem;
-		outline: 1px solid var(--wc-schedule--session--border--color);
+		outline: 1px solid var(--wp--preset--color--accent-3);
 		box-shadow: none;
 	}
 
@@ -633,7 +626,7 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 
 /* stylelint-disable-next-line selector-id-pattern */
 
-.wordcamp-schedule:not(#hack) #wordcamp-schedule__day-2023-08-26-tracks-all .wordcamp-schedule__column-header {
+.wordcamp-schedule:not(#hack) #wordcamp-schedule__day-2024-09-18-tracks-47-48-49 .wordcamp-schedule__column-header {
 		background-color: var(--wp--preset--color--contrast);
 		outline: 1px solid var(--wp--preset--color--accent-2);
 		color: var(--wp--preset--color--base);
@@ -647,7 +640,7 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__session {
 		font-size: inherit;
 		position: relative;
-		background: var(--wc-schedule--color--background);
+		background: var(--wp--preset--color--base);
 	}
 
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__session > * {
@@ -671,7 +664,7 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 		}
 
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__session:where(.is-type-session):hover a:where(:not(.wp-element-button)), .wordcamp-schedule:not(#hack) .wordcamp-schedule__session:where(.is-type-session):focus-within a:where(:not(.wp-element-button)) {
-				color: var(--wc-schedule--link--color--text) !important;
+				color: var(--wp--preset--color--accent-2) !important;
 			}
 
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__session:where(.is-type-session):hover:not(.wcb-favourite-session) .wcb-session-favourite-icon a, .wordcamp-schedule:not(#hack) .wordcamp-schedule__session:where(.is-type-session):focus-within:not(.wcb-favourite-session) .wcb-session-favourite-icon a {
@@ -696,16 +689,18 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 					display: none;
 				}
 
-.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-category-lightning {
+/* Showcase category */
+
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-category-showcase {
 			background: var(--wp--preset--color--contrast);
 			color: var(--wp--preset--color--accent-3);
 		}
 
-.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-category-lightning a:where(:not(.wp-element-button)) {
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-category-showcase a:where(:not(.wp-element-button)) {
 				color: var(--wp--preset--color--base);
 			}
 
-.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-category-lightning .wcb-session-favourite-icon a {
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-category-showcase .wcb-session-favourite-icon a {
 				background-image: url(https://wc-us.org/wp-content/uploads/2024/07/star-outline-light.svg);
 			}
 
@@ -741,10 +736,6 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 				inset: 0;
 				z-index: 0;
 			}
-
-.wordcamp-schedule:not(#hack) .has-category-lightning .wordcamp-schedule__session-title {
-		font-size: 1.1rem;
-	}
 
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__session-speakers a {
 		position: relative;
@@ -783,14 +774,10 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 
 		/* Showcase day ID */
 		/* stylelint-disable-next-line selector-id-pattern */
-		.wordcamp-schedule:not(#hack) #wordcamp-schedule__day-2023-08-26-tracks-all .wordcamp-schedule__time-slot-header {
+		.wordcamp-schedule:not(#hack) #wordcamp-schedule__day-2024-09-18-tracks-47-48-49 .wordcamp-schedule__time-slot-header {
 			background-color: var(--wp--preset--color--contrast);
 			outline: 1px solid var(--wp--preset--color--accent-2);
 			color: var(--wp--preset--color--base);
-		}
-
-		.wordcamp-schedule:not(#hack) .has-category-lightning .wordcamp-schedule__session-title {
-			font-size: 1.3125rem;
 		}
 
 		.wordcamp-schedule:not(#hack) .wordcamp-schedule__session::before {
