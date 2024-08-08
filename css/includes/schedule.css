@@ -111,7 +111,7 @@ body.single-wcb_session {
 		}
 
 		/* Showcase category */
-		&.has-category-lightning {
+		&.has-category-showcase {
 			background: var(--wp--preset--color--contrast);
 			color: var(--wp--preset--color--accent-3);
 			outline: 1px solid var(--wp--preset--color--accent-2);
