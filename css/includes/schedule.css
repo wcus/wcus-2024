@@ -133,6 +133,10 @@ body.single-wcb_session {
 				& a:where(:not(.wp-element-button)) {
 					color: var(--wp--preset--color--base) !important;
 				}
+
+				& .wcb-session-favourite-icon a {
+					background-image: url(https://wc-us.org/wp-content/uploads/2024/07/star-outline-light.svg);
+				}
 			}
 		}
 

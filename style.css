@@ -708,6 +708,10 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 					color: var(--wp--preset--color--base) !important;
 				}
 
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-category-showcase:where(.is-type-session):hover .wcb-session-favourite-icon a, .wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-category-showcase:where(.is-type-session):focus-within .wcb-session-favourite-icon a {
+					background-image: url(https://wc-us.org/wp-content/uploads/2024/07/star-outline-light.svg);
+				}
+
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__session.wcb-favourite-session {
 			outline: 5px solid var(--wp--preset--color--accent);
 			outline-offset: -5px;
