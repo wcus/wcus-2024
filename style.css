@@ -476,6 +476,8 @@ body.single-wcb_organizer .wp-block-post-content .wp-block-read-more {
 :is(.wp-block-query .wcb_speaker,body.page-slug-speakers,body.single-wcb_speaker) .wp-block-wordcamp-avatar img {
 			display: block;
 			vertical-align: middle;
+			object-fit: cover;
+			width: 100%;
 		}
 
 :is(.wp-block-query .wcb_speaker,body.page-slug-speakers,body.single-wcb_speaker) .wp-block-wordcamp-avatar::before {
