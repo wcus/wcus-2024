@@ -273,6 +273,11 @@ body.single-wcb_session {
 
 	@media (max-width: 549px) {
 
+		& .wordcamp-schedule__session,
+		& .wordcamp-schedule__time-slot-header {
+			border: none;
+		}
+
 		& .wordcamp-schedule__time-slot-header {
 			margin-top: 0;
 		}
