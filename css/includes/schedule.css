@@ -118,6 +118,13 @@ body.single-wcb_session {
 				background-image: url(https://wc-us.org/wp-content/uploads/2024/07/star-filled.svg);
 			}
 		}
+
+		&.is-spanning-all-tracks:not(.is-type-custom)::before {
+			display: inline-block;
+			margin-block-end: 4px;
+			font-size: 1em;
+			content: "Mt Hood";
+		}
 	}
 
 	& .wordcamp-schedule__session-title {
@@ -176,6 +183,10 @@ body.single-wcb_session {
 				color: var(--wp--preset--color--base);
 			}
 
+			& .wordcamp-schedule__session-category {
+				display: none;
+			}
+
 			&.wcb-favourite-session {
 				outline: 5px solid var(--wp--preset--color--accent);
 				outline-offset: -5px;
@@ -232,19 +243,23 @@ body.single-wcb_session {
 			font-size: 1em;
 		}
 
-		& .has-track-1-woodrow-wilson::before {
-			content: "Woodrow Wilson";
+		& .has-track-2-stumptown::before {
+			content: "Stumptown";
 		}
 
-		& .has-track-2-annapolis::before {
-			content: "Annapolis";
+		& .has-track-3-rose-city::before {
+			content: "Rose City";
 		}
 
-		& .has-track-3-cherry-blossom::before {
-			content: "Cherry Blossom";
+		& .has-track-4-timbers::before {
+			content: "Timbers";
 		}
 
 		& .is-spanning-all-tracks::before {
+			content: "Mt Hood";
+		}
+
+		& .is-spanning-all-tracks.is-type-custom::before {
 			content: "All tracks" !important;
 		}
 	}

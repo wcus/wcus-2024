@@ -692,6 +692,13 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 				background-image: url(https://wc-us.org/wp-content/uploads/2024/07/star-filled.svg);
 			}
 
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.is-spanning-all-tracks:not(.is-type-custom)::before {
+			display: inline-block;
+			margin-block-end: 4px;
+			font-size: 1em;
+			content: "Mt Hood";
+		}
+
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__session-title {
 		display: revert;
 		padding-inline-end: 26px;
@@ -755,6 +762,10 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 				color: var(--wp--preset--color--base);
 			}
 
+.wordcamp-schedule:not(#hack) #wordcamp-schedule__day-2023-08-25-tracks-all .wordcamp-schedule__session .wordcamp-schedule__session-category, .wordcamp-schedule:not(#hack) #wordcamp-schedule__day-2024-09-18-tracks-47-48-49 .wordcamp-schedule__session .wordcamp-schedule__session-category {
+				display: none;
+			}
+
 .wordcamp-schedule:not(#hack) #wordcamp-schedule__day-2023-08-25-tracks-all .wordcamp-schedule__session.wcb-favourite-session, .wordcamp-schedule:not(#hack) #wordcamp-schedule__day-2024-09-18-tracks-47-48-49 .wordcamp-schedule__session.wcb-favourite-session {
 				outline: 5px solid var(--wp--preset--color--accent);
 				outline-offset: -5px;
@@ -811,19 +822,23 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 			font-size: 1em;
 		}
 
-		.wordcamp-schedule:not(#hack) .has-track-1-woodrow-wilson::before {
-			content: "Woodrow Wilson";
+		.wordcamp-schedule:not(#hack) .has-track-2-stumptown::before {
+			content: "Stumptown";
 		}
 
-		.wordcamp-schedule:not(#hack) .has-track-2-annapolis::before {
-			content: "Annapolis";
+		.wordcamp-schedule:not(#hack) .has-track-3-rose-city::before {
+			content: "Rose City";
 		}
 
-		.wordcamp-schedule:not(#hack) .has-track-3-cherry-blossom::before {
-			content: "Cherry Blossom";
+		.wordcamp-schedule:not(#hack) .has-track-4-timbers::before {
+			content: "Timbers";
 		}
 
 		.wordcamp-schedule:not(#hack) .is-spanning-all-tracks::before {
+			content: "Mt Hood";
+		}
+
+		.wordcamp-schedule:not(#hack) .is-spanning-all-tracks.is-type-custom::before {
 			content: "All tracks" !important;
 		}
 	}
