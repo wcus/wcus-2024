@@ -110,36 +110,6 @@ body.single-wcb_session {
 			}
 		}
 
-		/* Showcase category */
-		&.has-category-showcase {
-			background: var(--wp--preset--color--contrast);
-			color: var(--wp--preset--color--accent-3);
-			outline: 1px solid var(--wp--preset--color--accent-2);
-
-			& .wordcamp-schedule__session-title,
-			& a:where(:not(.wp-element-button)) {
-				color: var(--wp--preset--color--base);
-			}
-
-			& .wcb-session-favourite-icon a {
-				background-image: url(https://wc-us.org/wp-content/uploads/2024/07/star-outline-light.svg);
-			}
-
-			&:where(.is-type-session):hover,
-			&:where(.is-type-session):focus-within {
-				background: #05191d !important;
-				color: var(--wp--preset--color--accent-3) !important;
-
-				& a:where(:not(.wp-element-button)) {
-					color: var(--wp--preset--color--base) !important;
-				}
-
-				& .wcb-session-favourite-icon a {
-					background-image: url(https://wc-us.org/wp-content/uploads/2024/07/star-outline-light.svg);
-				}
-			}
-		}
-
 		&.wcb-favourite-session {
 			outline: 5px solid var(--wp--preset--color--accent);
 			outline-offset: -5px;
@@ -185,6 +155,7 @@ body.single-wcb_session {
 	}
 
 	/* Showcase day ID */
+	& #wordcamp-schedule__day-2023-08-25-tracks-all,
 	& #wordcamp-schedule__day-2024-09-18-tracks-47-48-49 {
 		background-color: var(--wp--preset--color--contrast);
 
@@ -193,6 +164,40 @@ body.single-wcb_session {
 			background-color: var(--wp--preset--color--contrast);
 			outline: 1px solid var(--wp--preset--color--accent-2);
 			color: var(--wp--preset--color--base);
+		}
+
+		& .wordcamp-schedule__session {
+			background: var(--wp--preset--color--contrast);
+			color: var(--wp--preset--color--accent-3);
+			outline: 1px solid var(--wp--preset--color--accent-2);
+
+			& .wordcamp-schedule__session-title,
+			& a:where(:not(.wp-element-button)) {
+				color: var(--wp--preset--color--base);
+			}
+
+			&.wcb-favourite-session {
+				outline: 5px solid var(--wp--preset--color--accent);
+				outline-offset: -5px;
+
+				& .wcb-session-favourite-icon a {
+					background-image: url(https://wc-us.org/wp-content/uploads/2024/07/star-filled.svg);
+				}
+			}
+
+			& .wcb-session-favourite-icon a {
+				background-image: url(https://wc-us.org/wp-content/uploads/2024/07/star-outline-light.svg);
+			}
+
+			&:where(.is-type-session):hover,
+			&:where(.is-type-session):focus-within {
+				background: #05191d !important;
+				color: var(--wp--preset--color--accent-3) !important;
+
+				& a:where(:not(.wp-element-button)) {
+					color: var(--wp--preset--color--base) !important;
+				}
+			}
 		}
 	}
 
@@ -219,13 +224,6 @@ body.single-wcb_session {
 			padding-block: 0.5rem;
 			font-size: 1em;
 			background-color: var(--wp--preset--color--base-2);
-		}
-
-		/* Showcase day ID */
-		& #wordcamp-schedule__day-2024-09-18-tracks-47-48-49 .wordcamp-schedule__time-slot-header {
-			background-color: var(--wp--preset--color--contrast);
-			outline: 1px solid var(--wp--preset--color--accent-2);
-			color: var(--wp--preset--color--base);
 		}
 
 		& .wordcamp-schedule__session::before {
