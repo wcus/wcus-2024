@@ -692,18 +692,25 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 				background-image: url(https://wc-us.org/wp-content/uploads/2024/07/star-filled.svg);
 			}
 
-.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.is-spanning-all-tracks:not(.is-type-custom,.has-track-5-campfire)::before {
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__session::before {
 			display: inline-block;
-			margin-block-end: 4px;
+			margin-block-end: 0.5rem;
+			padding: 0 10px;
+			background: var(--wp--preset--color--accent-3);
+			border: 1px solid var(--wp--preset--color--contrast);
 			font-size: 1em;
+		}
+
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.is-spanning-all-tracks:not(.is-type-custom,.has-track-5-campfire)::before {
 			content: "Mt Hood";
 		}
 
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-track-5-campfire::before {
-			display: inline-block;
-			margin-block-end: 4px;
-			font-size: 1em;
 			content: "WordCamp US Lounge";
+		}
+
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-slug-networking::before {
+			content: "Sponsor Hall";
 		}
 
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__session-title {
@@ -797,6 +804,11 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 .wordcamp-schedule:not(#hack) #wordcamp-schedule__day-2023-08-25-tracks-all .wordcamp-schedule__session:where(.is-type-session):hover a:where(:not(.wp-element-button)), .wordcamp-schedule:not(#hack) #wordcamp-schedule__day-2024-09-18-tracks-47-48-49 .wordcamp-schedule__session:where(.is-type-session):hover a:where(:not(.wp-element-button)), .wordcamp-schedule:not(#hack) #wordcamp-schedule__day-2023-08-25-tracks-all .wordcamp-schedule__session:where(.is-type-session):focus-within a:where(:not(.wp-element-button)), .wordcamp-schedule:not(#hack) #wordcamp-schedule__day-2024-09-18-tracks-47-48-49 .wordcamp-schedule__session:where(.is-type-session):focus-within a:where(:not(.wp-element-button)) {
 					color: var(--wp--preset--color--base) !important;
 				}
+
+.wordcamp-schedule:not(#hack) #wordcamp-schedule__day-2023-08-25-tracks-all .wordcamp-schedule__session::before, .wordcamp-schedule:not(#hack) #wordcamp-schedule__day-2024-09-18-tracks-47-48-49 .wordcamp-schedule__session::before {
+				background-color: var(--wp--preset--color--contrast);
+				border: 1px solid var(--wp--preset--color--accent-2);
+			}
 
 @media (max-width: 1000px) {
 
