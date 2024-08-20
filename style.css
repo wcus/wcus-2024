@@ -710,7 +710,7 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 		}
 
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-slug-networking::before {
-			content: "Sponsor Hall";
+			content: "Sponsor Hall" !important;
 		}
 
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__session-title {

@@ -137,7 +137,7 @@ body.single-wcb_session {
 		}
 
 		&.has-slug-networking::before {
-			content: "Sponsor Hall";
+			content: "Sponsor Hall" !important;
 		}
 	}
 
