@@ -692,11 +692,18 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 				background-image: url(https://wc-us.org/wp-content/uploads/2024/07/star-filled.svg);
 			}
 
-.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.is-spanning-all-tracks:not(.is-type-custom)::before {
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.is-spanning-all-tracks:not(.is-type-custom,.has-track-5-campfire)::before {
 			display: inline-block;
 			margin-block-end: 4px;
 			font-size: 1em;
 			content: "Mt Hood";
+		}
+
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-track-5-campfire::before {
+			display: inline-block;
+			margin-block-end: 4px;
+			font-size: 1em;
+			content: "WordCamp US Lounge";
 		}
 
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__session-title {

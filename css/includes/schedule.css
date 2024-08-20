@@ -119,11 +119,18 @@ body.single-wcb_session {
 			}
 		}
 
-		&.is-spanning-all-tracks:not(.is-type-custom)::before {
+		&.is-spanning-all-tracks:not(.is-type-custom,.has-track-5-campfire)::before {
 			display: inline-block;
 			margin-block-end: 4px;
 			font-size: 1em;
 			content: "Mt Hood";
+		}
+
+		&.has-track-5-campfire::before {
+			display: inline-block;
+			margin-block-end: 4px;
+			font-size: 1em;
+			content: "WordCamp US Lounge";
 		}
 	}
 
