@@ -838,6 +838,10 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 			content: "Mt Hood";
 		}
 
+		.wordcamp-schedule.has-track-5-campfire:not(#hack)::before {
+			content: "WordCamp US Lounge";
+		}
+
 		.wordcamp-schedule:not(#hack) .is-spanning-all-tracks.is-type-custom::before {
 			content: "All tracks" !important;
 		}

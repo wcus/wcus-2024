@@ -259,6 +259,10 @@ body.single-wcb_session {
 			content: "Mt Hood";
 		}
 
+		&.has-track-5-campfire::before {
+			content: "WordCamp US Lounge";
+		}
+
 		& .is-spanning-all-tracks.is-type-custom::before {
 			content: "All tracks" !important;
 		}
