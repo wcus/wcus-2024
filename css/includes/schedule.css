@@ -130,6 +130,7 @@ body.single-wcb_session {
 
 		&.is-spanning-all-tracks:not(.is-type-custom,.has-track-5-campfire)::before,
 		&.has-slug-opening-remarks::before,
+		&.has-slug-opening-remarks-2::before,
 		&.has-slug-closing-announcements::before {
 			content: "Mt Hood";
 		}
