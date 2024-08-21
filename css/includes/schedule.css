@@ -128,7 +128,9 @@ body.single-wcb_session {
 			font-size: 1em;
 		}
 
-		&.is-spanning-all-tracks:not(.is-type-custom,.has-track-5-campfire)::before {
+		&.is-spanning-all-tracks:not(.is-type-custom,.has-track-5-campfire)::before,
+		&.has-slug-opening-remarks::before,
+		&.has-slug-closing-announcements::before {
 			content: "Mt Hood";
 		}
 
@@ -274,6 +276,8 @@ body.single-wcb_session {
 			content: "Timbers";
 		}
 
+		& .has-slug-opening-remarks::before,
+		& .has-slug-closing-announcements::before,
 		& .is-spanning-all-tracks::before {
 			content: "Mt Hood";
 		}

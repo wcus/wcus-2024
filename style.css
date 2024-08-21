@@ -701,7 +701,7 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 			font-size: 1em;
 		}
 
-.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.is-spanning-all-tracks:not(.is-type-custom,.has-track-5-campfire)::before {
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.is-spanning-all-tracks:not(.is-type-custom,.has-track-5-campfire)::before,.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-slug-opening-remarks::before,.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-slug-closing-announcements::before {
 			content: "Mt Hood";
 		}
 
@@ -853,6 +853,8 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 			content: "Timbers";
 		}
 
+		.wordcamp-schedule:not(#hack) .has-slug-opening-remarks::before,
+		.wordcamp-schedule:not(#hack) .has-slug-closing-announcements::before,
 		.wordcamp-schedule:not(#hack) .is-spanning-all-tracks::before {
 			content: "Mt Hood";
 		}
