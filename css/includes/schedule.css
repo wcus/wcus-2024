@@ -339,6 +339,10 @@ body.single-wcb_session {
 		content: "Showcase";
 	}
 
+	&.wcb_session_category-showcase.wcb_session_category-keynote::before {
+		content: "Showcase keynote";
+	}
+
 	&.wcb_session_category-campfire::before {
 		background-color: var(--wp--preset--color--base);
 		border: 1px solid var(--wp--preset--color--accent-5);
