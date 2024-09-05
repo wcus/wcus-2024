@@ -131,7 +131,7 @@ body.single-wcb_session {
 		&.has-slug-opening-remarks::before,
 		&.has-slug-opening-remarks-2::before,
 		&.has-slug-closing-announcements::before {
-			content: "Mt Hood";
+			content: "Mt. Hood (Oregon Ballroom)";
 		}
 
 		&.has-track-5-campfire::before {
@@ -140,6 +140,10 @@ body.single-wcb_session {
 
 		&.has-slug-networking::before {
 			content: "Sponsor Hall" !important;
+		}
+
+		&.has-slug-wcus-group-photo::before {
+			content: "Pre-Function A" !important;
 		}
 	}
 
@@ -265,21 +269,21 @@ body.single-wcb_session {
 		}
 
 		& .has-track-2-stumptown::before {
-			content: "Stumptown";
+			content: "Stumptown (B113 - B116)";
 		}
 
 		& .has-track-3-rose-city::before {
-			content: "Rose City";
+			content: "Rose City (A105 - A106)";
 		}
 
 		& .has-track-4-timbers::before {
-			content: "Timbers";
+			content: "Timbers (C123 - C124)";
 		}
 
 		& .has-slug-opening-remarks::before,
 		& .has-slug-closing-announcements::before,
 		& .is-spanning-all-tracks::before {
-			content: "Mt Hood";
+			content: "Mt. Hood (Oregon Ballroom)";
 		}
 
 		&.has-track-5-campfire::before {

@@ -702,7 +702,7 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 		}
 
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__session.is-spanning-all-tracks:not(.is-type-custom,.has-track-5-campfire)::before,.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-slug-opening-remarks::before,.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-slug-opening-remarks-2::before,.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-slug-closing-announcements::before {
-			content: "Mt Hood";
+			content: "Mt. Hood (Oregon Ballroom)";
 		}
 
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-track-5-campfire::before {
@@ -711,6 +711,10 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-slug-networking::before {
 			content: "Sponsor Hall" !important;
+		}
+
+.wordcamp-schedule:not(#hack) .wordcamp-schedule__session.has-slug-wcus-group-photo::before {
+			content: "Pre-Function A" !important;
 		}
 
 .wordcamp-schedule:not(#hack) .wordcamp-schedule__session-title {
@@ -842,21 +846,21 @@ body.single-wcb_session .wp-block-post-terms a:hover {
 		}
 
 		.wordcamp-schedule:not(#hack) .has-track-2-stumptown::before {
-			content: "Stumptown";
+			content: "Stumptown (B113 - B116)";
 		}
 
 		.wordcamp-schedule:not(#hack) .has-track-3-rose-city::before {
-			content: "Rose City";
+			content: "Rose City (A105 - A106)";
 		}
 
 		.wordcamp-schedule:not(#hack) .has-track-4-timbers::before {
-			content: "Timbers";
+			content: "Timbers (C123 - C124)";
 		}
 
 		.wordcamp-schedule:not(#hack) .has-slug-opening-remarks::before,
 		.wordcamp-schedule:not(#hack) .has-slug-closing-announcements::before,
 		.wordcamp-schedule:not(#hack) .is-spanning-all-tracks::before {
-			content: "Mt Hood";
+			content: "Mt. Hood (Oregon Ballroom)";
 		}
 
 		.wordcamp-schedule.has-track-5-campfire:not(#hack)::before {
