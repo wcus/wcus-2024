@@ -183,7 +183,7 @@ body.single-wcb_session {
 
 	/* Showcase day ID */
 	& #wordcamp-schedule__day-2023-08-25-tracks-all,
-	& #wordcamp-schedule__day-2024-09-18-tracks-47-48-49 {
+	& #wordcamp-schedule__day-2024-09-18-tracks-48-47-49 {
 		background-color: var(--wp--preset--color--contrast);
 
 		& .wordcamp-schedule__column-header,
@@ -268,15 +268,15 @@ body.single-wcb_session {
 			font-size: 1em;
 		}
 
+		& .has-track-1-rose-city::before {
+			content: "Rose City (A105 - A106)";
+		}
+
 		& .has-track-2-stumptown::before {
 			content: "Stumptown (B113 - B116)";
 		}
 
-		& .has-track-3-rose-city::before {
-			content: "Rose City (A105 - A106)";
-		}
-
-		& .has-track-4-timbers::before {
+		& .has-track-3-timbers::before {
 			content: "Timbers (C123 - C124)";
 		}
 
